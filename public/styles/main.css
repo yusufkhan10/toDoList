@@ -1,0 +1,81 @@
+
+.stringItem{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.date{
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+}
+h1{
+    display: table;
+    text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+    border-radius: 6px;
+    font-family: 'Libre Baskerville', serif;
+    color:rgb(240, 240, 240) !important;
+    background-color: #183D3D;
+}
+
+input{
+    border: 0;
+    border-bottom: 5px;
+    border-color: black;
+    outline: none;
+    background-color: #FAF1E4;
+    
+
+}
+
+input:focus{border-bottom:1px solid rgb(59, 2, 59);}
+
+
+.toDoList:hover{
+    box-shadow:  3px;
+}
+.toDoList{
+    box-sizing: border-box !important;
+    margin: 10px !important;
+    border-bottom: 1px solid rgb(206, 196, 196) !important;
+}
+
+
+
+.task:checked + label{
+text-decoration: line-through;
+font-style: italic;
+color: green;
+
+}
+input :placeholder-shown{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.nav-link{
+    color: rgb(240, 240, 240) !important;
+}
+
+body{
+    background: linear-gradient(to right bottom, #93B1A6,#183D3D);
+}
+footer{
+    border-top: 1px solid rgb(206, 196, 196) !important;
+    padding: 1%;
+    color: rgb(240, 240, 240);
+}
+
+.card-header{
+    background-color:#FAF1E4 !important;
+    border-bottom: 1px solid rgb(206, 196, 196) !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+.card{
+    background-color: #FAF1E4 !important;
+    min-height: 100vh !important;
+    height: max-content !important;
+    margin-bottom: 2% !important;
+}

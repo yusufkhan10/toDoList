@@ -1,0 +1,31 @@
+<!--include header-->
+<%- include("partials/header.ejs") %>
+
+
+<!--main work-->
+<!--add for loop-->
+
+<div class="date p-3">
+    <h1 class="p-2"><%=locals.newDate%></h1>
+</div>
+<div class="card mx-auto d-flex px-0 col-4 shadow-lg" style="height: 100vh;">
+    <div class="card-header">
+        <form class="item d-flex align-items-center" action="/" method="post">
+            <input type="text" name="listItem" placeholder="New Item" class="col-10 p-2">
+            <input type="image" src="/assets/plus-circle.svg" class="btnSubmit p-2">
+        </form>
+    </div>
+        <% for(let i=0; i<locals.dailyList.length; i++){%>
+            <div class="toDoList d-flex p-3"> 
+                 <input type="checkbox" class="task" value="taskChecker">
+                <label for="taskChecker" class="stringItem mx-auto">
+                    <%= JSON.stringify(locals.dailyList[i]).slice(1, JSON.stringify(locals.dailyList[i]).length - 1); %>
+
+                </label>
+            </div>
+            <%} %> 
+        
+  </div>
+
+<!--include footer-->
+<%- include("partials/footer.ejs") %>
